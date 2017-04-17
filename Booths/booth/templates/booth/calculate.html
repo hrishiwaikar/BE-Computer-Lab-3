@@ -1,0 +1,24 @@
+
+<body style="background-color:powderblue;">
+<h1>Booths Multiplication of Numbers </h1><br>
+<img src="http://www.computerconservationsociety.org/resurrection/images/images51/res51b.jpg">
+<p></p>
+<p>First Number  : {{number1}}    and it's binary conversion : {{bin1}}</p><br>
+<p>Second Number : {{number2}}    and it's binary conversion : {{bin2}}</p><br>
+
+<h2>Solution Steps</h2>
+
+<p>A : {{A}}</p>
+<p>S : {{S}}</p>
+<p>P : {{P}}</p>
+
+<ul>
+   {%for message,step in combined%}
+    <br><br>
+    <li>{{message}}<br>P : {{step}}</li>
+    {%endfor%}
+</ul>
+
+<h3>Final Answer in Binary  :  {{finalbinans}}</h3><br>
+<h4>Final Answer in Decimal :  {{product}} </h4>
+</body>

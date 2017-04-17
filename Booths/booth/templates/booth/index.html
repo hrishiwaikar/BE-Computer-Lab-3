@@ -1,0 +1,20 @@
+<html>
+
+<style>
+    body:{ align:center; }
+    form:{vertical-align: middle;}
+</style>
+<body style="background-color:powderblue;" >
+<h1 align="center">BOOTH'S BINARY MULTIPLICATION ALGORITHM</h1>
+<img src="http://memim.com/images/andrew-donald-booth-04.jpg" style="width:304px;height:358px;" align="center">
+
+<form action="/booth/calculate/" method="post">
+    {% csrf_token %}<br>
+    First Number &emsp;&emsp14;&emsp14;&emsp14;<input type="text" name="firstnumber" align="center"><br><br>
+    Second Number &emsp;<input type="text" name="secondnumber" align="center"><br>
+    <br>
+    &emsp;&emsp14;<input type="submit" value="Multiply" name="multiplyButton">
+</form>
+
+</body>
+</html>

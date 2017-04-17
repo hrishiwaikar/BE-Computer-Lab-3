@@ -1,0 +1,29 @@
+<body style="background-color:powderblue;">
+<h1>PLAGIARISM DETECTOR</h1>
+<form action="/plagiarism/" method="post">
+    {%csrf_token%}
+    <div>
+    {{myform}}
+    </div>
+
+    <div align="center">
+        <p></p>
+        {{testform}}
+    </div>
+
+    <div style="text-align:center;">
+        <p>  </p>
+    <input type="submit" class="submitbutton" name="Submit">
+    </div>
+
+
+
+
+</form>
+
+{%if showoutput%}
+<p>With respect to doc1 : {{percentage1}} %</p>
+<p>With respect to doc2 : {{percentage2}} %</p>
+<p>With respect to doc3 : {{percentage3}} %</p>
+{%endif%}
+</body>
